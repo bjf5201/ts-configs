@@ -4,6 +4,21 @@ about: Report non-security related bugs
 title: 'bug (prod): <concise description>'
 labels: bug
 assignees: bjf5201
+body:
+- type: checkboxes
+  id: bug-steps
+  attributes:
+    label: Follow the steps below:
+    description: Check off each one once completed.
+    options:
+      - label: Search [repository issues](https://github.com/bjf5201/ts-configs/issues) - your bug may already be reported! Please look through current issues before submitting a new one.
+        required: true
+      - label: If a **development** related bug, ensure you have followed the [development documentation](https://github.com/bjf5201/ts-configs/blob/main/docs/development.md) steps correctly
+        required: true
+      - label: If a **production** related bug, ensure you have followed the [usage documentation](https://github.com/bjf5201/ts-configs/blob/main/README.md) steps correctly
+        required: true
+      - label: Fill out the information below.
+        required: true
 ---
 
 # Bug Report
@@ -12,10 +27,10 @@ assignees: bjf5201
 
 Follow the steps below:
 
-[  ] - Search [repository issues](https://github.com/bjf5201/ts-configs/issues) - your bug may already be reported! Please look through current issues before submitting a new one.
-[  ] - If a **development** related bug, ensure you have followed the [development documentation](https://github.com/bjf5201/ts-configs/blob/main/docs/development.md) steps correctly
-[  ] - If a **production** bug, please ensure you have followed the [usage documentation](https://github.com/bjf5201/ts-configs/blob/main/README.md#Usage) properly.
-[  ] - Fill out the information below
+1. Search [repository issues](https://github.com/bjf5201/ts-configs/issues) - your bug may already be reported! Please look through current issues before submitting a new one.
+2. If a **development** related bug, ensure you have followed the [development documentation](https://github.com/bjf5201/ts-configs/blob/main/docs/development.md) steps correctly
+3. If a **production** related bug, ensure you have followed the [usage documentation](https://github.com/bjf5201/ts-configs/blob/main/README.md) steps correctly
+4. Fill out the information below.
 
 ## Bug Information
 
