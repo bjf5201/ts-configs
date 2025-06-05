@@ -5,16 +5,16 @@ labels: [
   "feat"
 ]
 body:
-- type: checkboxes
-  id: checklist
-  attributes:
-    label: Follow the steps below.
-    description: Check off each action once complete
-    options:
-      - label: Have you searched the repository's [issues](https://github.com/bjf5201/ts-configs/issues) to ensure this isn't a repeat request? (required)
-        required: true
-      - label: Have you read the [contributing guide](https://github.com/bjf5201/ts-configs/.github/CONTRIBUTING.md)? (required)
-        required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Follow the steps below.
+      description: Check off each action once complete
+      options:
+        - label: Have you searched the repository's [issues](https://github.com/bjf5201/ts-configs/issues) to ensure this isn't a repeat request? (required)
+          required: true
+        - label: Have you read the [contributing guide](https://github.com/bjf5201/ts-configs/.github/CONTRIBUTING.md)? (required)
+          required: true
   - type: input
     id: start_date
     attributes:
