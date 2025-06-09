@@ -82,10 +82,11 @@ body:
   - type: dropdown
     id: contribute
     attributes:
+      multiple: false
       label: Would you be willing to implement this feature?
       options:
-        - Yes
-        - Not right now!
+        - "Yes"
+        - "Not right now!"
     validations:
       required: true
     
