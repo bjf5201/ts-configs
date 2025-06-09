@@ -82,7 +82,6 @@ body:
   - type: dropdown
     id: contribute
     attributes:
-      multiple: "false"
       label: Would you be willing to implement this feature?
       options:
         - Yes
