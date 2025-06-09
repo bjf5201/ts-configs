@@ -55,7 +55,6 @@ body:
       label: 4. Reproduction URL
       description: Please enter a URL that provides a reproduction of the issue, if applicable (i.e., https://codesandbox.io/p/sandbox/github/GH-USERNAME/GH-REPO-NAME or https://github.com/USERNAME/REPO-NAME).
       placeholder: i.e., https://github.com/USERNAME/REPO-NAME
-      render: bash
     validations:
       required: false
   - type: textarea
