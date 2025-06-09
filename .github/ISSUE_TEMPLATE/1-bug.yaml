@@ -33,7 +33,7 @@ body:
     id: expected-description
     attributes:
       label: 2. Expected Behavior
-      description: 
+      description: "What did you expect to happen?"
   - type: textarea
     id: reprod
     attributes:
