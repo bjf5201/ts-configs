@@ -81,8 +81,8 @@ body:
       required: true
   - type: dropdown
     id: contribute
-    multiple: false
     attributes:
+      multiple: false
       label: Would you be willing to implement this feature?
       options:
         - Yes
