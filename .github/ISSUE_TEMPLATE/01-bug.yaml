@@ -40,13 +40,13 @@ body:
     id: reprod
     attributes:
       label: 3. Reproduction Steps
+      render: bash
       description: What steps led to your issue? Please enter the specific steps to reproduce it. (Don't worry about putting it into a codeblack/using backticks - the text will be automatically formatted into code).
       placeholder: |
         1. Go to '...'
         2. Click on '....'
         3. Scroll down to '....'
         4. See error
-      render: bash
     validations:
       required: true
   - type: input
