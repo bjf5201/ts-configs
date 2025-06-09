@@ -14,6 +14,7 @@ body:
   - type: checkboxes
     id: issue-check
     attributes:
+      label: "0. Search Issues"
       description: "Please [search the repository](https://github.com/bjf5201/ts-configs/issues) to check if an issue for this bug already exists."
       options:
         - label: I have checked the repository for identical bug reports.
