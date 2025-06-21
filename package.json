@@ -51,16 +51,15 @@
     "test": "pnpm -r run test",
     "release": "pnpm -r run release"
   },
+  "dependencies": {
+    "@ts-configs/tsconfig": "workspace:*"
+  },
   "devDependencies": {
-    "@types/node": "22.15.30",
     "automd": "0.4.0",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "9.27.0",
     "prettier": "3.5.3",
     "tsdown": "0.12.7",
-    "tsx": "^4.19.4",
     "turbo": "2.5.4",
-    "typedoc": "0.28.5",
     "typescript": "5.8.3"
   },
   "config": {

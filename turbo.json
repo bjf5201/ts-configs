@@ -1,28 +1,54 @@
 {
-    "$schema": "https://turborepo.com/schema.json",
+    "$schema": "./node_modules/turbo/schema.json",
     "ui": "tui",
     "tasks": {
-        "build": {
-            "dependsOn": ["^build"],
-            "inputs": ["$TURBO_DEFUALT$", ".env"],
-            "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
-        },
-        "lint":{
-            "dependsOn": ["^lint"]
-        },
-        "check-types": {
-            "dependsOn": ["^check-types"]
-        },
-        "dev": {
-            "cache": false,
-            "persistent": true
-        },
-        "test": {
-            "dependsOn": ["transit", "@ts-configs/vitest-config#build"],
-            "outputs": ["coverage/**"]
-        },
-        "transit": {
-            "dependsOn": ["^transit"]
-        }
-    }
-}
+      "build": {
+        "dependsOn": ["^build"],
+        "inputs": [
+            "$TURBO_DEFAULT$",
+            ".env"
+        ],
+        "outputs": [".cache/tsbuildinfo.json", "dist/**"]
+      },
+      "clean": {
+        "cache": false
+      },
+      "//#clean": {
+        "cache": false
+      },
+      "dev": {
+        "cache": false,
+        "persistent": false
+      },
+      "format": {
+        "outputs": [".cache/.prettiercache"],
+        "outputLogs": "new-only"
+      },
+      "lint": {
+        "outputs": [".cache/.eslintcache"],
+        "outputLogs": "new-only"
+      },
+      "typecheck": {
+        "outputs": [".cache/tsbuildinfo.json"],
+        "outputLogs": "new-only"
+      },
+      "pub:dev": {
+        "cache": false
+      },
+      "pub:release": {
+        "cache": false
+      }
+    },
+    "globalEnv": ["PORT"],
+    "globalPassThroughEnv": [
+      "CI",
+      "NODE_ENV",
+      "SKIP_ENV_VALIDATION",
+      "VERCEL",
+      "VERCEL_ENV",
+      "VERCEL_URL",
+      "VERCEL_PROJECT_PRODUCTION_URL",
+      "npm_config_user_agent",
+      "npm_lifecycle_event"
+    ]
+  }

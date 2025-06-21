@@ -1,13 +1,14 @@
 packages:
-    - "apps/*"
-    - "packages/*"
-    - "lib/*"
-overrides:
-    "@eslint-community/eslint-utils": ^4.7.0
-    "@typescript-eslint/utils": ^8.32.1
-    eslint: ^9.27.0
-    tsx: ^4.19.4
+  - apps/*
+  - packages/*
+  - lib/*
 onlyBuiltDependencies:
-    - esbuild
-    - simple-git-hooks
-    - unrs-resolver
+  - '@swc/core'
+  - esbuild
+  - simple-git-hooks
+  - unrs-resolver
+overrides:
+  '@eslint-community/eslint-utils': ^4.7.0
+  '@typescript-eslint/utils': ^8.32.1
+  eslint: ^9.27.0
+  tsx: ^4.19.4

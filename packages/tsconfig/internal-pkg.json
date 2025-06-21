@@ -1,0 +1,12 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "TSConfig for Internal Packages",
+    "extends": "./base.jsonc",
+    "compilerOptions": {
+      "composite": true,
+      "emitDeclarationOnly": true,
+      "noEmit": false,
+      "outDir": "${configDir}/dist",
+      "sourceMap": true,
+    }
+  }

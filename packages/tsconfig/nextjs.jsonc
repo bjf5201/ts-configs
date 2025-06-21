@@ -1,0 +1,13 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "TSConfig for Next.js",
+    "extends": "./base.jsonc",
+    "compilerOptions": {
+      "declaration": false,
+      "declarationMap": false,
+      "jsx": "preserve",
+      "lib": ["ES2022", "dom", "dom.iterable"],
+      "module": "esnext",
+      "plugins": [{ "name": "next" }]
+    }
+  }
