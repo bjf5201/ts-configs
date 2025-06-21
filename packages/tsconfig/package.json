@@ -6,17 +6,8 @@
   "type": "module",
   "license": "MIT",
   "sideEffects": false,
-  "exports": {
-    "./base": "./base.json",
-    "./internal-pkg": "./internal-pkg.json",
-    "./nextjs": "./nextjs.json",
-    "./react-library": "./react-library.json"
-  },
   "files": [
-    "base.json",
-    "internal-pkg.json",
-    "nextjs.json",
-    "react-library.json"
+    "*.json"
   ],
   "publishConfig": {
     "access": "public"

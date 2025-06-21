@@ -51,11 +51,10 @@
     "test": "pnpm -r run test",
     "release": "pnpm -r run release"
   },
-  "dependencies": {
-    "@ts-configs/tsconfig": "workspace:*"
-  },
   "devDependencies": {
+    "@ts-configs/tsconfig": "workspace:*",
     "automd": "0.4.0",
+    "bumpp": "10.2.0",
     "cz-conventional-changelog": "3.3.0",
     "prettier": "3.5.3",
     "tsdown": "0.12.7",
