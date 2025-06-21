@@ -1,0 +1,11 @@
+{
+    "remote.autoForwardPortsFallback": 0,
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    }
+}

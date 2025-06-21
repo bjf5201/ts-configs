@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+    /* Monorepo Library Build */
+    "composite": true,                  /* Tells TS project is a monorepohelps to cache builds & allows project to be used with projecreferences */
+    "sourceMap": true,                  /* Create source map files foemitted JS files so consumers can use go-to-definition whedebugging */
+    "declarationDir": "dist/types",     /* Specify output directory fogenerated declaration files */
+    "declarationMap": true,             /* Create a source map for .d.tfiles so consumers can use go-to-definition when debugging */
+    "allowArbitraryExtensions": true,   /* Enable importing a file with *any* extension, provided a declaration file is provided */
+    "allowImportingTsExtensions": true, /* Allows imports to include TS file extensions. Requires either `--noEmit` or `--emitDeclarationOnly` AND `"moduleResolution": "bundler"` to be set. */
+    "isolatedDeclarations": true,
+
+    /* Output */
+    "module": "preserve",           /* Most closely mimics how bundlers treat modules. `moduleResolution: Bundler` is implied from this option. */
+    "moduleResolution": "bundler",  /* Recommended setting for projects using a bundler. Included for explicitness. */
+    "emitDeclarationOnly": true,    /* Only output `.d.ts` files and not js` files */
+
+    /* Libraries */
+    "lib": ["es2022"]   /* Tells TypeScript what built-in types tinclude; using 'es2022' vs 'esnext' for stability and explicitness*/
+    }
+}

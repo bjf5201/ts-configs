@@ -1,2 +1,31 @@
+# Dependencies
 node_modules
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Web apps
+docs/packages/*/dist
+apps/web/.docusaurus
+apps/web/.cache-loader
+
+# Testing
+coverage
+
+# Nx/Turbo
+.nx/cache
+.nx/workspace-data
+.turbo
+
+# Vitest
+tsconfig*.vitest-temp.json
+
+# Build outputs
+.next/
+out/
+build
 dist
+*.tsbuildinfo
+*.tgz

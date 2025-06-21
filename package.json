@@ -1,13 +1,71 @@
 {
-  "name": "base-configs",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Bethany Fannin <contact@bethanyfannin.com> (https://www.bethanyfannin.com)",
+  "name": "@bjf5201/ts-configs",
+  "version": "0.1.0",
+  "description": "Bethany's custom typescript project configs",
+  "keywords": [
+    "typescript",
+    "configuration",
+    "config",
+    "configs",
+    "eslint",
+    "prettier",
+    "tsconfig",
+    "utilities",
+    "dx"
+  ],
   "license": "MIT",
-  "packageManager": "pnpm@10.11.0"
+  "homepage": "https://github.com/bjf5201/ts-configs#README",
+  "bugs": {
+    "url": "https://github.com/bjf5201/ts-configs/issues"
+  },
+  "author": "Bethany Fannin <contact@bethanyfannin.com> (https://www.bethanyfannin.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjf5201/ts-configs"
+  },
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977",
+  "scripts": {
+    "prebuild": "automd",
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test",
+    "release": "pnpm -r run release"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.30",
+    "automd": "0.4.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "9.27.0",
+    "prettier": "3.5.3",
+    "tsdown": "0.12.7",
+    "tsx": "^4.19.4",
+    "turbo": "2.5.4",
+    "typedoc": "0.28.5",
+    "typescript": "5.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
